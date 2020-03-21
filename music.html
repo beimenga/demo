@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/music.css">
+    <script src="js/jQuery.js"></script>
+    <script>
+        document.querySelector('html').style.fontSize=document.documentElement.clientWidth/10+"px"
+    </script>
+</head>
+<body>
+    <div class="in_ge">
+
+   
+    <div style="display: none;position: absolute;height: 0;">
+            <audio style="display: none;position: absolute;height: 0;" controls  src="music/伦桑 - 山有木兮.mp3"></audio><br>
+    </div>
+ 
+    <div class="large blur" style="position: fixed;width: 10rem;z-index:-1;"></div>
+    <div class="head" style="padding: 0.15rem 0.3rem">
+        <div>
+                <img src="wyimg/menu.png" alt="">
+        </div>
+        <div>
+                <p class="m_name">山有木兮</p>
+                <p class="m_peo">伦桑</p>
+        </div>
+        <div>
+            <img src="wyimg/menu.png" alt="">
+        </div>
+    </div>
+    <div class="m_pic_div">
+            <div id = "z" class="m_pic">
+    </div>
+    
+    </div>
+    <div class="m_five">
+        <div><img src="wyimg/menu.png" alt=""></div>
+        <div><img src="wyimg/menu.png" alt=""></div>
+        <div><img src="wyimg/menu.png" alt=""></div>
+        <div><img src="wyimg/menu.png" alt=""></div>
+        <div><img src="wyimg/menu.png" alt=""></div>
+    </div>
+    <div>
+            <span class="bofangshichang time">00:00</span>
+            <div class="progress">
+                <div  class="current_div"></div>
+                <img class="pro_img" src="prog.png" alt="">
+            </div>
+            <span class="all time">00:00</span>
+            <div style="clear: both;"></div>
+    </div>
+        
+    <div class="m_foot">
+        <div><img src="wyimg/循环.png" alt=""></div>
+        <div><img class="pre" src="wyimg/btn上一首.png" alt=""></div>
+        <div style="position: relative;">
+            <img class="zanting" style="width: 1.2rem;position: absolute;top: 0.1rem;left: 0.4rem;" src="wyimg/zating.png" alt="">
+            <img class="bofang" style="width: 1.2rem;position: absolute;top: 0.1rem;left: 0.4rem;" src="wyimg/bofang.png" alt="">
+        </div>
+        <div><img class="next" src="wyimg/btn下一首.png" alt=""></div>
+        <div><img style="width: 1rem;position: relative;top: 0.1rem" src="wyimg/菜单.png" alt=""></div>
+    </div>
+</div>
+</body>
+<script>
+
+    var mdata = [
+        {
+            gm:"山有木兮",
+            gs:"伦桑",
+            address:"music/伦桑 - 山有木兮.mp3",
+            img:"fm/c1.jpg"
+        },
+        {
+            gm:"倒数",
+            gs:"邓紫棋",
+            address:"music/G.E.M.邓紫棋 - 倒数 (Live).mp3",
+            img:"wyimg/bg.jpg"
+        },
+        {
+            gm:"起风了",
+            gs:"买辣椒也用券",
+            address:"music/买辣椒也用券 - 起风了.mp3",
+            img:"fm/s1.jpg"
+        },
+        {
+            gm:"大鱼",
+            gs:"徐梦圆",
+            address:"music/徐梦圆 - 大鱼 (徐梦圆Remix).mp3",
+            img:"fm/s2.jpg"
+        },
+        {
+            gm:"眉间雪",
+            gs:"晴愔",
+            address:"music/晴愔 - 眉间雪 (剧情版).mp3",
+            img:"fm/s3.jpg"
+        },
+        {
+            gm:"夜空中最亮的星",
+            gs:"逃跑计划",
+            address:"music/逃跑计划 - 夜空中最亮的星.mp3",
+            img:"fm/s4.jpg"
+        },
+        {
+            gm:"可不可以",
+            gs:"黑崎子",
+            address:"music/黑崎子 - 可不可以 (磁性男声版).mp3",
+            img:"fm/s5.jpg"
+        }
+    ]
+    var audio=document.querySelector('audio')
+    var large=document.querySelector('.large')
+    large.style.height=window.innerHeight+"px"
+    var zanting=document.querySelector('.zanting')
+    var bofang=document.querySelector('.bofang')
+    var z=document.getElementById("z")
+    z.style.animationPlayState = "paused"
+    zanting.style.display="none"
+    zanting.onclick=function(){
+        audio.pause()
+        bofang.style.display="block"
+        zanting.style.display="none"
+        z.style.animationPlayState = "paused"
+    }
+    bofang.onclick=function(){
+        audio.play()
+        zanting.style.display="block"
+        bofang.style.display="none"
+        z.style.animationPlayState = "running"
+        m_pic.style.animation="move1 15s linear 0s infinite none"
+    }
+
+    var bofangshichang=document.querySelector(".bofangshichang")
+    var all=document.querySelector(".all")
+    var pl=document.querySelector(".play")
+    var pa=document.querySelector(".pause")
+    var pro_div=document.querySelector(".progress")
+    var pro_img=document.querySelector(".pro_img")
+    var current_div=document.querySelector(".current_div")
+    var pre=document.querySelector(".m_foot").querySelector(".pre")
+    var next=document.querySelector(".m_foot").querySelector(".next")
+    //进度条
+    {
+
+    var timer=setInterval(function(){
+        
+        // console.log(audio.currentTime)
+        var left=(pro_div.clientWidth-pro_img.clientWidth)*(audio.currentTime/audio.duration)
+        pro_img.style.left=left+"px"
+        current_div.style.width=left+"px"
+        all.innerHTML=parseInt(Math.floor(audio.duration/60))+":"+parseInt((audio.duration-Math.floor(audio.duration/60)*60))
+        bofangshichang.innerHTML=parseInt(Math.floor(audio.currentTime/60))+":"+parseInt((audio.currentTime-Math.floor(audio.currentTime/60)*60))
+    },10)
+    var x,y;
+    pro_img.ontouchstart=function(e){    
+        clearInterval(timer)
+        x=e.changedTouches[0].clientX-pro_img.offsetLeft
+        document.documentElement.ontouchmove=function(e){
+            // console.log(e)
+            l = e.changedTouches[0].clientX - x
+            t = 0
+            // 如果left值小于0 就让其永远等于0
+            if (l<0){
+                l = 0;
+            } 
+            // 如果 left+div的宽度大于 浏览器的宽度  就让left永远是  浏览器的宽度-div的宽度
+            if ((l + pro_img.clientWidth) > pro_div.clientWidth){
+                l = pro_div.clientWidth - pro_img.clientWidth
+            }
+            pro_img.style.left = l  + 'px'
+            pro_img.style.top = t  + 'px'
+            current_div.style.width=l+"px"
+            var bofangshichang=document.querySelector(".bofangshichang")
+            
+            
+            audio.currentTime=((l+pro_img.clientWidth)/pro_div.clientWidth)*audio.duration
+        }
+        pro_img.ontouchend=function(){
+            document.documentElement.ontouchmove=null
+            var timer=setInterval(function(){
+            var left=(pro_div.clientWidth-pro_img.clientWidth)*(audio.currentTime/audio.duration)
+            pro_img.style.left=left+"px"
+            current_div.style.width=left+"px"
+            bofangshichang.innerHTML=parseInt(Math.floor(audio.currentTime/60))+":"+parseInt((audio.currentTime-Math.floor(audio.currentTime/60)*60))
+            },10)
+        }
+    }
+}
+    //上一首
+    var blur=document.querySelector(".blur")
+    var m_pic=document.querySelector(".m_pic")
+    var m_name=document.querySelector(".m_name")
+    var m_peo=document.querySelector(".m_peo")
+    // audio.src=mdata[0].address
+    // audio.src=mdata[0].address
+    // blur.style.background="url("+mdata[0].img+")"
+    // m_pic.style.background="url("+mdata[0].img+")"
+    // m_name.innerHTML=mdata[0].gm
+    // m_peo.innerHTML=mdata[0].gs
+
+    var s=0
+    
+    pre.ontouchstart=function(){
+        // zanting.style.display="none"
+        // bofang.style.display="block"
+        m_pic.style.animation="move2 15s linear 0s infinite none"
+        console.log(bofang.style.display)
+        music_move()
+        if(s==0){
+            s=mdata.length
+        }
+        s--
+        console.log(s)
+    }
+    next.ontouchstart=function(){
+        m_pic.style.animation="move2 15s linear 0s infinite none"
+        console.log(bofang.style.display)
+        music_move()
+        if(s==mdata.length-1){
+            s=-1
+        }
+        s++
+        console.log(s)
+    }
+    var music_move=function(){
+        if(bofang.style.display==""||bofang.style.display=="block"){
+            audio.src=mdata[s].address
+            audio.src=mdata[s].address
+            blur.style.background="url("+mdata[s].img+")"
+            m_pic.style.background="url("+mdata[s].img+")"
+            m_name.innerHTML=mdata[s].gm
+            m_peo.innerHTML=mdata[s].gs
+            audio.pause()
+        }else{
+            audio.src=mdata[s].address
+            audio.src=mdata[s].address
+            blur.style.background="url("+mdata[s].img+")"
+            m_pic.style.background="url("+mdata[s].img+")"
+            m_name.innerHTML=mdata[s].gm
+            m_peo.innerHTML=mdata[s].gs
+            var m1=function(){
+                m_pic.style.animation="move1 15s linear 0s infinite none"
+               
+            }
+            var m2=function(){
+                    m_pic.style.animation="move2 15s linear 0s infinite none"
+                    setTimeout(function(){m_pic.style.animation="move1 15s linear 0s infinite none"},100)
+            }
+            m2()
+            audio.play()
+        }
+
+    }
+</script>
+</html>

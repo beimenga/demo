@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        document.querySelector('html').style.fontSize=document.documentElement.clientWidth/10+"px"
+    </script>
+</head>
+
+<style>
+     *{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    .lh{
+        height: 1.3rem;
+        line-height: 1.3rem;
+    }
+    .top{
+        padding-left: 5px;
+        width: 10rem;
+        background: rgb(218, 55, 55);
+        color: #fff;
+        font-size: 0.5rem
+    }
+    .top img{
+        width: 1.3rem;
+        float: left;
+    }
+    .top p{
+        float: left;
+    }
+    .tel{
+        width: 9rem;
+        margin:0 auto;
+        margin-top:0.6rem;
+        margin-bottom:0.3rem;
+        border-bottom: 1px solid #ccc;
+        font-size: 0.4rem;
+    }
+    .tel input{
+        width: 7rem;
+        padding: 5px;
+        height: 0.8rem;
+        outline: none;
+        border:none;
+        font-size: 0.4rem
+    }
+    .tel span{
+        margin: 0px 8px;
+    }
+    .pas{
+        width: 9rem;
+        margin:0 auto;
+        border-bottom: 1px solid #ccc;
+        font-size: 0.4rem;
+        position: relative;
+    }
+    .pas input{
+        width: 8.3rem;
+        padding: 10px;
+        height: 0.8rem;
+        outline: none;
+        border:none;
+        font-size: 0.4rem
+    }
+    .pas span{
+        font-size: 0.1rem;
+        position: absolute;
+        right: 10px;
+
+    }
+    .tel img,.pas img{
+        float: left;
+        width: 0.7rem;
+        position: relative;
+        top: 10px
+    }
+    .color_c{
+        color: #ccc
+    }
+    .log{
+        margin: 1rem;
+        text-align: center;
+        line-height: 1.1rem;
+        width: 8rem;
+        height: 1.1rem;
+        background:  rgb(218, 55, 55);
+        border-radius: 50px;
+        font-size: 0.5rem;
+        color: #fff;
+    }
+    .foot{
+        padding-top: 1.3rem;
+        font-size: 0.4rem;
+        text-align: center;
+        color: #ccc;
+    }
+    .other{
+        margin-top:0.3rem;
+        display: flex;
+    }
+    .other div{
+        border-radius: 50%;
+        flex:1;
+    }
+    .other div div{
+        margin: 0 auto;
+        width: 1.6rem;
+        height:1.6rem;
+        line-height: 2rem;
+        border-radius: 50%;
+        border: 1px solid #a9647a;
+        flex:1;       
+    }
+    .other div{
+        font-size: 0.3rem
+    }
+   
+</style>
+<body>
+    <div class="lo">
+
+   
+        <div class="con">
+            <div class="top lh">
+                <img class="back" src="wyimg/lefta.png" alt="">
+                <p class="lh">手机号登录</p>
+            </div>
+            <div class="tel lh color_c">
+                <img src="wyimg/手机01.png" alt=""><span>+86</span><input id="phone" class="user" maxlength="11"  type="text" placeholder="请输入手机号">
+            </div>
+            <div class="pas lh color_c">
+                    <img src="wyimg/密码01.png" alt=""><input class="psd" type="password" placeholder="请输入密码"><span>忘记密码？</span>
+                </div>
+            <div class="log lh">
+                    登录
+            </div>
+        </div>
+        <div class="footer">
+            <div class="foot">
+                <div>————&nbsp;&nbsp;其他登录方式&nbsp;&nbsp;————</div><br>
+                <div class="other" style="padding:0 1rem">
+                    <div><div style="line-height: 2.4rem"><img style="width: 1.2rem"  src="wyimg/微信.png" alt=""></div><br>微信</div>
+                    <div><div><img style="width: 0.8rem" src="wyimg/QQ.png" alt=""></div><br>QQ</div>
+                    <div><div><img style="width: 0.8rem"  src="wyimg/微博.png" alt=""></div><br>微博</div>
+                    <div><div><img style="width: 0.8rem" src="wyimg/网易新闻LOgo.png" alt=""></div><br>网易邮箱</div>
+                </div>
+            </div>
+    </div>
+
+    
+</div>
+
+<script>
+    setInterval(function(){
+    var forget=document.getElementsByClassName("pas")[0].getElementsByTagName("span")[0]
+    var pas=document.getElementsByClassName("pas")[0].getElementsByTagName("input")[0]   
+    if(pas.value!=""){
+        // console.log(pas.innerHTML)
+        forget.style.display="none"
+    }else{
+        forget.style.display="inline-block"
+    }
+    },1)
+    
+
+    var back = document.querySelector(".back")
+    back.onclick=function(){
+        location.href="main.html"
+    } 
+    // user0={name:name,password:password}
+
+    
+    // var user=document.getElementsByClassName("user")[0]
+    // var psd=document.getElementsByClassName("psd")[0]
+    document.cookie='user3={"name":"18435997534","password":"123"}'
+    document.cookie='user0={"name":"sinal","password":"123"}'
+    document.cookie='user1={"name":"sinal1","password":"123"}'
+    document.cookie='user2={"name":"sinal2","password":"123"}'
+
+       
+    var login=document.getElementsByClassName("log")[0]
+    var count=0
+    var n,p
+    function a(name,password){
+        document.cookie='user'+count+'={"name":"'+name+'","password":"'+password+'"}'
+        count++
+    }    
+    login.onclick=function(){
+        var phone = document.getElementById('phone').value;
+        if(!(/^1[34578]\d{9}$/.test(phone))){ 
+            alert("请输入有效的手机号码"); 
+            // location.href="login.html"
+        }else{
+            var user=document.getElementsByClassName("user")[0]
+            var psd=document.getElementsByClassName("psd")[0]
+            // console.log(document.cookie.split(";"))
+            var user1=document.cookie.split(";")
+            var str=""
+            for(i=0;i<user1.length;i++){
+                user1[i]=user1[i].split("=")
+                var name=JSON.parse(user1[i][1]).name
+                var password=JSON.parse(user1[i][1]).password
+                if(name==user.value&&password==psd.value){
+                
+                    location.href="first.html"
+                }else if(name==user.value&&password!=psd.value){
+                    alert("密码错误！请重新输入！")
+                    return false
+                }
+            }
+            // console.log(user)
+            user.push()
+        
+        }
+        
+    }
+
+
+    var foot=document.querySelector(".foot")
+    foot.style.height=(1/3)*window.innerHeight+"px"
+    var con=document.querySelector(".con")
+    con.style.height=(2/3)*window.innerHeight+"px"
+
+    // function checkPhone(){ 
+    // var phone = document.getElementById('phone').value;
+    // if(!(/^1[34578]\d{9}$/.test(phone))){ 
+    //     alert("手机号码有误，请重填");  
+    //     location.href="login.html"
+    // }
+
+// }
+</script>
+
+</body>
+</html>

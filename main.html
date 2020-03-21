@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        (function() {
+            var newRem = function() {
+                document.querySelector('html').style.fontSize=document.documentElement.clientWidth/10+"px"
+            };
+            window.addEventListener('resize', newRem, false);
+            newRem();
+        })();
+    </script>
+</head>
+
+<style>
+     *{
+        /* box-sizing: border-box;
+        -webkit-box-sizing: border-box; */
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        background:url("wyimg/bg.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .head,.main,.foot{
+        width: 10rem;
+        border: none;
+        background: #fff;
+    }
+    .head{
+        border: none;
+        text-align: center;
+        background: -webkit-radial-gradient(rgba(239,126,145,0.5) 10%,rgba(255, 255, 255, 0.5) 10% ,#fff 80%);
+        background: -webkit-linear-gradient(rgba(239,126,145,0.4) 0%,rgba(255, 255, 255, 0.5) 30%,#fff 100%);
+    
+        }
+    .wylogo{
+        width: 2.5rem;
+    }
+    /* .main {
+        padding-top: 1rem
+    } */
+    .main div{
+        text-align: center;
+        line-height: 1.2rem;
+        width: 8rem;
+        height: 1.2rem;
+        border: 1px solid #a9647a;
+        border-radius: 30px;
+        font-size: 0.5rem;
+        color: #a9647a;
+        /* display:flex */
+    }
+    .login{
+        margin:0 1rem;
+        margin-bottom: 0.5rem
+    }
+    .reg{
+        margin: 1rem;
+        margin-top: 0.5rem;
+    }
+    .foot{
+        /* padding-top: 1.3rem; */
+        font-size: 0.4rem;
+        text-align: center;
+        color: #ccc;
+    }
+    .other{
+        margin-top:0.3rem;
+        display: flex;
+    }
+    .other div{
+        border-radius: 50%;
+        flex:1;
+    }
+    .other div div{
+        margin: 0 auto;
+        width: 1.6rem;
+        height:1.6rem;
+        line-height: 2rem;
+        border-radius: 50%;
+        border: 1px solid #a9647a;
+        flex:1;       
+    }
+    .other div{
+        font-size: 0.3rem
+    }
+</style>
+
+<body>
+    <div class="head">
+            <img class="wylogo" src="wyimg/网易云.png" alt="">
+    </div>
+    <div class="main">
+        <div class="login">手机号登录</div>
+        <div class="reg">注册</div>
+    </div>
+    <div class="foot">
+        <div>————&nbsp;&nbsp;其他登录方式&nbsp;&nbsp;————</div><br>
+        <div class="other" style="padding:0 1rem">
+            <div><div style="line-height: 2.4rem"><img style="width: 1.2rem"  src="wyimg/微信.png" alt=""></div><br>微信</div>
+            <div><div><img style="width: 0.8rem" src="wyimg/QQ.png" alt=""></div><br>QQ</div>
+            <div><div><img style="width: 0.8rem"  src="wyimg/微博.png" alt=""></div><br>微博</div>
+            <div><div><img style="width: 0.8rem" src="wyimg/网易新闻LOgo.png" alt=""></div><br>网易邮箱</div>
+        </div>
+
+    </div>
+</body>
+<script>
+    var head=document.querySelector(".head")
+    var main=document.querySelector(".main")
+    var foot=document.querySelector(".foot")
+    var wylogo=document.querySelector(".wylogo")
+    // var login=document.querySelector(".login")
+    // var reg=document.querySelector(".reg")
+
+    head.style.height=(1/3)*window.innerHeight+"px"
+    main.style.height=(5/18)*window.innerHeight+"px"
+    main.style.paddingTop=(1/18)*window.innerHeight+"px"
+    foot.style.height=(1/3)*window.innerHeight+"px"
+    head.style.lineHeight=(1/3)*window.innerHeight+wylogo.clientWidth/2+"px"
+    // main.style.lineHeight=(1/3)*window.innerHeight+"px"
+
+    var login=document.querySelector(".login")
+    var reg=document.querySelector(".reg")
+
+    login.onclick=function(){
+        location.href="login.html"
+    }
+    reg.onclick=function(){
+        location.href="register.html"
+    }
+
+</script>
+</html>

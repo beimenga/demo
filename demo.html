@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+ul li{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #ff0000;
+    flex:1
+}
+
+.img_div,.foot_div{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex
+}
+.img_div>div:first-child{
+    text-align: center;
+    flex: 1
+}
+.img_div img{
+    width: 240px
+}
+.img_div>div:last-child{
+    padding:10px 30px;
+    line-height: 50px;
+    flex: 4
+}
+.foot_div>div:first-child{
+    background: #00ff00;
+    flex: 1
+}
+.foot_div>div:last-child{
+    background: #0000ff;
+    flex: 4
+}
+.foot_div{
+    margin-top: 30px;
+    height: 300px;
+}
+</style>
+<body>
+    <ul >
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <div class="img_div">
+        <div><img src="fm/s3.jpg" alt="img"></div>
+        <div>
+            <p>标题：xxxxxxxxxxxxxxxxxxxxxxxx</p>
+            <p>描述：xxxxxxxxxxxxxxxxx</p>
+            <p>详情：xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        </div>
+    </div>
+    <div class="foot_div">
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>

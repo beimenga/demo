@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        document.querySelector('html').style.fontSize=document.documentElement.clientWidth/10+"px"
+    </script>
+    <script src="js/jQuery.js"></script>
+   <link rel="stylesheet" href="css/first.css">
+   <link rel="stylesheet" href="css/music.css">
+</head>
+
+<body>
+<div class="in_di">
+    <!-- 头部 -->
+    <div class="top lh">
+        <div class="menu"><img  style="width:0.6rem"  src="wyimg/menu.png" alt=""></div>
+        <div></div>
+        <div class="mymusic lBtn"><img  style="width:0.65rem"  src="wyimg/mymusic.png" alt=""></div>
+        <div class="wymusic lBtn"><img src="wyimg/wymusic01.png" alt=""></div>
+        <div class="wyvodio lBtn"><img style="width:0.8rem;position: relative;top: 0.05rem"  src="wyimg/wyvodio01.png" alt=""></div>
+        <div></div>
+        <div class="search"><img style="width:0.6rem" src="wyimg/search.png" alt="">
+        </div>
+    </div>
+    <div style="height: 1.3rem;">
+
+    </div>
+    <!-- 本地音乐 --> 
+    <div class="mymusic_div lDiv">
+        <div style="padding: 0.3rem;padding-bottom:0px;position: relative;">
+                <div class="my_hy">
+                    <div class="my_hy_01">
+                        <div>
+                            <div style="flex:1.2">
+                                <img src="wyimg/portrait.jpg" alt="">
+                            </div>
+                            <div style="flex:3;text-align: left;font-size: 0.48rem">
+                                北梦啊
+                            </div>
+                            <div style="color:#DF4337;margin-top:0.5rem;margin-right:0.3rem;flex:1.5;border: 1px solid  #DF4337;height: .8rem;line-height: .8rem;border-radius: 15px">
+                                    开通会员
+                            </div>
+                        </div>
+                        <div style="border-top: 1px solid #f4f4f4">
+                            黑胶VIP季卡多送一个月
+                        </div>
+                    </div>
+                    
+                    <div style="width:10rem;height:2.3rem;background: #DF4337;position: absolute;top:0;left:0;z-index: -8;">
+                    </div>
+                </div>
+        </div>
+        <div class="my_hy_list01">
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>本地音乐<span>(40)</span></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>最近播放<span>(90)</span></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>下载管理<span>(60)</span></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>我的电台<span>(4)</span></div>
+                    
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>我的收藏<span>(4)</span></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>Sati 空间</div>
+                </div>
+                
+        </div>
+        
+        <div class="create">
+            创建的歌单
+        </div>
+        <div class="c_music">
+            <div>
+                <div>
+                        <img src="wyimg/bg.jpg" alt="">
+                </div>
+                <div>
+                    <p>我喜欢的音乐</p>
+                    <span>150首，已下载150首</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="fm/c1.jpg" alt="">
+                </div>
+                <div>
+                        <p>伦桑</p>
+                        <span>已下载50首</span>
+                </div>
+            </div>
+        </div>
+        <div class="cellect">
+                收藏的歌单
+        </div>
+        <div class="cel_music">
+            <div>
+                <div>
+                        <img src="fm/s1.jpg" alt="">
+                </div>
+                <div>
+                    <p>100个悲伤的瞬间</p>
+                    <span>99首 by youTuBe视频推荐</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="fm/s2.jpg" alt="">
+                </div>
+                <div>
+                        <p>朱一龙&小笼包</p>
+                        <span>116首 by 有末静</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="fm/s3.jpg" alt="">
+                </div>
+                <div>
+                        <p>年轻时多经历一点</p>
+                        <span>47首 by mo然</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="fm/s4.jpg" alt="">
+                </div>
+                <div>
+                        <p>就老去吧 孤独别醒来</p>
+                        <span>47首 by 爱听音乐的猫大叔</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="fm/s5.jpg" alt="">
+                </div>
+                <div>
+                        <p>古风 恰似故人归</p>
+                        <span>219首 by Abe晴明</span>
+                </div>
+            </div>
+            <!-- <div style="height: 1.4rem;">      
+            </div> -->
+        </div>
+    </div>
+    <div class="wymusic_div lDiv">
+        <div class="wym_nav">
+            <div>推荐</div>
+            <div>朋友</div>
+            <div>电台</div>
+        </div>
+        <div style="height:1.6rem"></div>
+        <div style="width:10rem;height:6rem;background: #DF4337;position: absolute;top:0;left:0;z-index: -8;">
+        </div>
+        <div>
+            <div class="banner">
+                <img src="wyimg/banner/b1.jpg" alt="">
+                <img src="wyimg/banner/b2.jpg" alt="">
+                <img src="wyimg/banner/b3.jpg" alt="">
+                <img src="wyimg/banner/b4.jpg" alt="">
+                <img src="wyimg/banner/b5.jpg" alt="">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="b_nav">
+            <div>
+                <div>
+                    <img src="wyimg/search.png" alt="">
+                </div>
+                <p>私人FM</p>
+            </div>
+            <div>
+                <div>
+                    <img src="wyimg/mymusic.png" alt="">
+                </div>
+                <p>每日推荐</p>
+            </div>
+            <div>
+                <div>
+                    <img src="wyimg/menu.png" alt="">
+                </div>
+                <p>歌单</p>
+            </div>
+            <div>
+                <div>
+                    <img src="wyimg/mymusic.png" alt="">
+                </div>
+                <p>排行榜</p>
+            </div>
+        </div>
+        <div class="gedan" style="padding: 0.15rem">
+            <p>推荐歌单</p>
+            <div style="display: flex">
+                <div style="flex:1">
+                    <img src="wyimg/gdfm/gdfm01.jpg" alt="">
+                    <div>假期运势：宜返程，交好运</div>
+                </div>
+                <div style="flex:1">
+                    <img src="wyimg/gdfm/gdfm02.jpg" alt="">
+                    <div>听一首歌，邂逅久违的感动</div>
+                </div>
+                <div style="flex:1">
+                    <img src="wyimg/gdfm/gdfm03.jpg" alt="">
+                    <div>听歌看书两不误</div>
+                </div>
+            </div>
+            <div style="display: flex">
+                    <div style="flex:1">
+                        <img src="wyimg/gdfm/gdfm04.jpg" alt="">
+                        <div>华语速爆新歌</div>
+                    </div>
+                    <div style="flex:1">
+                        <img src="wyimg/gdfm/gdfm05.jpg" alt="">
+                        <div>糟了，是心动的感觉</div>
+                    </div>
+                    <div style="flex:1">
+                        <img src="wyimg/gdfm/gdfm06.jpg" alt="">
+                        <div>于你情诗百首</div>
+                    </div>
+                </div>
+        </div>
+        <div class="gedan" style="padding: 0.15rem">
+                <p>主播电台</p>
+                <div style="display: flex">
+                    <div style="flex:1">
+                        <img src="wyimg/gdfm/gdfm07.jpg" alt="">
+                        <div>你在我时间里存在</div>
+                    </div>
+                    <div style="flex:1">
+                        <img src="wyimg/gdfm/gdfm08.jpg" alt="">
+                        <div>叹云兮</div>
+                    </div>
+                    <div style="flex:1">
+                        <img src="wyimg/gdfm/gdfm09.jpg" alt="">
+                        <div>再遗忘</div>
+                    </div>
+                </div>
+                <div style="display: flex">
+                        <div style="flex:1">
+                            <img src="wyimg/gdfm/gdfm10.jpg" alt="">
+                            <div>梦回</div>
+                        </div>
+                        <div style="flex:1">
+                            <img src="wyimg/gdfm/gdfm11.jpg" alt="">
+                            <div>表白</div>
+                        </div>
+                        <div style="flex:1">
+                            <img src="wyimg/gdfm/gdfm12.jpg" alt="">
+                            <div>一首情歌</div>
+                        </div>
+                    </div>
+        </div>
+        <div class="gedan" style="padding: 0.15rem">
+                <p>古风歌单，帮你挑好了</p>
+                <div style="display: flex">
+                    <div style="flex:1">
+                        <img src="wyimg/gdfm/gdfm13.jpg" alt="">
+                        <div>心微动奈何情已远</div>
+                    </div>
+                    <div style="flex:1">
+                        <img src="wyimg/gdfm/gdfm14.jpg" alt="">
+                        <div>雾散，梦醒</div>
+                    </div>
+                    <div style="flex:1">
+                        <img src="wyimg/gdfm/gdfm15.jpg" alt="">
+                        <div>若教眼底无离恨，不信人间有白头</div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 1.4rem;"></div>
+    </div>
+    <div class="wyvodio_div lDiv">
+        <div style="height: 1.3rem;"></div>
+        <div class="wyv_nav">
+            <p>推荐</p>
+            <p>现场</p>
+            <p>翻唱</p>
+            <p>可念不可说</p>
+            <p>听BGM</p>
+            <p>MV</p>
+            <p>舞蹈</p>
+            <p>ACG音乐</p>
+            <p>演奏</p>
+        </div>
+        <div class="wyv_div">
+            <div class="wyv_v">
+               
+                <!-- <video poster="fm/v1.png" src="video/video01/大壮 - 我们不一样.mkv"></video> -->
+                <div  class="mv_div">
+                    <img class="mv_img" src="fm/v1.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>我们不一样</p>
+                <p>大壮</p>
+                <div style="width: 10rem;height: 0.2rem;background: #ccc;"></div>
+
+                <!-- <video  poster="fm/v2.png" src="video/video01/许巍 - 曾经的你.mkv"></video> -->
+                <div  class="mv_div">
+                    <img  class="mv_img" src="fm/v2.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>曾经的你</p>
+                <p>许巍</p>
+                <div style="width: 10rem;height: 0.2rem;background: #ccc;"></div>
+                <!-- <video  poster="fm/v3.png" src="video/video01/陈奕迅 - 十年.mkv"></video> -->
+                <div  class="mv_div">
+                    <img  class="mv_img" src="fm/v3.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>十年</p>
+                <p>陈奕迅</p>
+                
+            </div>
+            <div class="wyv_v">
+                <!-- <video src="video/video02/周杰伦 - 告白气球.mkv"></video> -->
+                <div  class="mv_div">
+                    <img class="mv_img" src="fm/v4.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>告白气球</p>
+                <p>周杰伦</p>
+                <div style="width: 10rem;height: 0.2rem;background: #ccc;"></div>
+            
+                <!-- <video src="video/video02/小潘潘、小峰峰 - 学猫叫.mkv"></video> -->
+                <div  class="mv_div">
+                    <img class="mv_img" src="fm/v5.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>学猫叫</p>
+                <p>小潘潘、小峰峰</p>
+                <div style="width: 10rem;height: 0.2rem;background: #ccc;"></div>
+            
+                <!-- <video  poster="fm/v4.png" src="video/video02/杨宗纬、张碧晨 - 凉凉.mkv"></video> -->
+                <div  class="mv_div">
+                    <img class="mv_img" src="fm/v6.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>凉凉</p>
+                <p>杨宗纬、张碧晨</p>
+                <div style="width: 10rem;height: 0.2rem;background: #ccc;"></div>
+            
+                <!-- <video src="video/video02/薛之谦 - 你还要我怎样.mkv"></video> -->
+                <div  class="mv_div">
+                    <img class="mv_img" src="fm/v7.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>你还要我怎样</p>
+                <p>薛之谦</p>
+               
+            
+            </div>
+            <div class="wyv_v">
+                <!-- <video src="video/video03/Olly Murs - That Girl.mkv"></video> -->
+                <div  class="mv_div">
+                    <img class="mv_img" src="fm/v8.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>That Girl</p>
+                <p>Olly Murs</p>
+                <div style="width: 10rem;height: 0.2rem;background: #ccc;"></div>
+                <!-- <video  poster="fm/v5.png" src="video/video03/李荣浩 - 李白.mkv"></video> -->
+                <div  class="mv_div">
+                    <img class="mv_img" src="fm/v9.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>李白</p>
+                <p>李荣浩</p>
+                <div style="width: 10rem;height: 0.2rem;background: #ccc;"></div>
+                <!-- <video src="video/video03/李袁杰 - 离人愁.mkv"></video> -->
+                <div  class="mv_div">
+                    <img class="mv_img" src="fm/v10.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>离人愁</p>
+                <p>李袁杰</p>
+                <div style="width: 10rem;height: 0.2rem;background: #ccc;"></div>
+                <!-- <video src="video/video03/毛不易 - 消愁.mkv"></video> -->
+                <div  class="mv_div">
+                    <img class="mv_img" src="fm/v11.png" alt="">
+                    <img class="mv_play yc" src="wyimg/bofang.png" alt="">
+                    <img class="mv_pause yc" src="wyimg/zating.png" alt="">
+                </div>
+                <p>消愁</p>
+                <p>毛不易</p>
+                
+            </div>
+            <div class="wyv_v">可念不可说</div>
+            <div class="wyv_v">听BGM</div>
+            <div class="wyv_v">MV</div>
+            <div class="wyv_v">舞蹈</div>
+            <div class="wyv_v">ACG音乐</div>
+            <div class="wyv_v">演奏</div>
+        </div>
+    </div>
+    <div class="running">
+        <div class="running_div"><img class="m_img" src="fm/c1.jpg" alt=""></div>
+        <div class="running_div">
+            <p class="m_name01">山有木兮</p>
+            <span>横滑可以切换上下首哦</span>
+        </div>
+        <div style="position: relative;">
+            <img style="position: absolute;left: 0.5rem; top: 0.3rem;width: 0.8rem" onclick="pause()" class="zanting" src="wyimg/暂停.png" alt="">
+            <img style="position: absolute;left: 0.5rem;top: 0.3rem;width: 0.8rem"   onclick="play()" class="bofang" src="wyimg/播放.png" alt="">
+        </div>
+        <div><img class="gd_listbtn" style="width: 0.7rem" src="wyimg/menu (1).png" alt=""></div>
+    </div>
+
+
+    
+
+    <!-- 侧边栏 -->
+    <div class="menu_listDiv">
+        <div class="menu_list">
+            <div class="my">
+                    <img src="wyimg/portrait.jpg" alt="">
+                    <div>
+                        <div>北梦啊</div>
+                        <div>Lv.7</div>
+                        <div>签到</div>
+                    </div>
+            </div>
+            <div class="list">
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>我的消息</div>
+                    <div></div>
+                    <div>19</div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>会员中心</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>商城</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>游戏推荐Beta</div>
+                    <div style="font-size: 0.1rem !important">正版航海王</div>
+                    <div></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>在线听歌免流量</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div style="background: #f4f4f4;height: 0.3rem"></div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>我的好友</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>附近的人</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div style="background: #f4f4f4;height: 0.3rem"></div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>个性换肤</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>听歌识曲</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>定时停止播放</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>扫一扫</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>音乐闹钟</div>
+                    <div></div>
+                    <div></div>
+                    
+                </div>
+                <div>
+                    <div><img src="wyimg/search01.png" alt=""></div>
+                    <div>驾驶模式</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                        <div><img src="wyimg/search01.png" alt=""></div>
+                        <div>亲子频道</div>
+                        <div></div>
+                        <div></div>
+                </div>
+                <div>
+                        <div><img src="wyimg/search01.png" alt=""></div>
+                        <div>音乐云盘</div>
+                        <div></div>
+                        <div></div>
+                </div>
+                <div>
+                        <div><img src="wyimg/search01.png" alt=""></div>
+                        <div>优惠券</div>
+                        <div></div>
+                        <div></div>
+                </div>
+                <div>
+                </div>
+                
+            </div>
+            <div class="foot" style="width: 10rem;display: flex;background: #fff;">
+                <div style="flex:4;display: flex" class="footer">
+                   <div class="yejian" style="flex: 6"><img style="width: 0.5rem;position: relative;top: 0.1rem;margin-right: 0.1rem" src="wyimg/menu01.png" alt=""> 夜间模式</div>
+                   <div style="flex: 5"><img style="width: 0.5rem;position: relative;top: 0.1rem;margin-right: 0.1rem" src="wyimg/menu01.png" alt="">设置</div>
+                   <div class="tuichu" style="flex: 5"><img style="width: 0.5rem;position: relative;top: 0.1rem;margin-right: 0.1rem" src="wyimg/menu01.png" alt="">退出</div>
+                </div>
+                <div style="flex:1"></div>
+            </div>
+        </div>
+        
+       
+        <div class="kong">
+
+        </div>
+    </div>
+</div>
+<div class="in_ge">
+        <div style="display: none;position: absolute;height: 0;">
+                <audio style="display: none;position: absolute;height: 0;" controls  src="music/伦桑 - 山有木兮.mp3"></audio><br>
+        </div>
+        <div class="large blur" style="position: fixed;width: 10rem;z-index:-1;"></div>
+        <div class="head" style="padding: 0.15rem 0.3rem">
+            <div>
+                    <img class="m_back" src="wyimg/fanhui.png" alt="">
+            </div>
+            <div>
+                <p class="m_name">山有木兮</p>
+                <p class="m_peo">伦桑</p>
+            </div>
+            <div>
+                <img src="wyimg/fen_xiang.png" alt="">
+            </div>
+        </div>
+        <div class="m_pic_div">
+                <div id = "z" class="m_pic">
+        </div>
+        
+        </div>
+
+<div style="position: fixed;bottom: 10px;width: 10rem;height: 200px;">  
+        <div class="m_five">
+            <div><img style="height: 0.74rem;" class="xihuan" src="wyimg/xihuan.png" alt=""></div>
+            <div><img src="wyimg/zngc-下载.png" alt=""></div>
+            <div><img src="wyimg/音效.png" alt=""></div>
+            <div><img src="wyimg/消息.png" alt=""></div>
+            <div><img src="wyimg/右侧菜单.png" alt=""></div>
+        </div>
+        <div>
+                <span class="bofangshichang time">00:00</span>
+                <div class="progress">
+                    <div  class="current_div"></div>
+                    <img class="pro_img" src="wyimg/点.png" alt="">
+                </div>
+                <span class="all time">00:00</span>
+                <div style="clear: both;"></div>
+        </div>
+            
+        <div class="m_foot">
+            <div style="position: relative;">
+                <img class="danqu" style="position: absolute;top: .3rem;left: .66rem;" src="wyimg/循环.png" alt="">
+                <img class="xunhuan" style="position: absolute;top: .3rem;left: .66rem;" src="wyimg/单曲循环_32.png" alt="">
+            </div>
+            <div><img class="pre" src="wyimg/btn上一首.png" alt=""></div>
+            <div style="position: relative;">
+                <img onclick="pause()" class="zanting" style="width: 1.2rem;position: absolute;top: 0.1rem;left: 0.4rem;" src="wyimg/zating.png" alt="">
+                <img onclick="play()" class="bofang" style="width: 1.2rem;position: absolute;top: 0.1rem;left: 0.4rem;" src="wyimg/bofang.png" alt="">
+            </div>
+            <div><img class="next" src="wyimg/btn下一首.png" alt=""></div>
+            <div><img class="gd_listbtn" style="width: 1rem;position: relative;top: 0.1rem" src="wyimg/菜单.png" alt=""></div>
+        </div>
+</div>
+        <style>
+                *{margin:0px;padding:0px;}
+                .box{width: 10rem;font-size: 0.4rem;text-align: center;position: fixed;top: 3rem}
+                .lrc{position:relative;widows: 10rem;;height:255px;overflow-y:auto}
+                .lrc li{display:block;padding:5px 0;color: #fff}
+                .z-crt{color:#0f0 !important}
+                .ctrl{margin:0 auto;padding-left:100px;width:300px;}
+        </style>
+        
+        <div class="box" id="box">
+            <ul class="lrc" id="lrc">
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="gd_div" >
+    <div class="gd_kong">
+    </div>
+    <div  class="gd_xh" >
+        <div class="lbxh" style="padding-left:0.3rem;font-size:0.4rem;background: #fff;height: 1.2rem;line-height:1.2rem;width: 10rem;border-radius: 0.5rem 0.5rem 0 0">
+                列表循环
+        </div>
+    </div>
+    <div style="position: relative;"  class="gd_list">
+    </div>
+</div>
+
+<script>
+    $('.search').click(function(){
+        location.href="search.html"
+    })
+</script>
+
+
+
+	
+<script language="javascript">
+     $('.box').hide()
+    $('.m_pic_div').click(function(){
+        $('.box').show()
+        $('.m_pic_div').hide()
+    })
+    $('.box').click(function(){
+        $('.m_pic_div').show()
+        $('.box').hide()
+    })
+        var fun=function(){
+        // 经解析后的歌词
+        var __lis = [{"offset":2000, "text":"作曲 : 执素兮"}, 
+                    {"offset":27000, "text":"作词 : 顾聆落"}, 
+                    {"offset":30000, "text":"世说鲛人之语"},
+                    {"offset":39000, "text":"深海而居 织绡绮丽"},
+                    {"offset":44000, "text":"向来如梦佳期"},
+                    {"offset":52000, "text":"若许曾经 虽死何惜"},
+                    {"offset":55000, "text":"从天真无忧无虑"},
+                    {"offset":59000, "text":"到万物尽收眼底"},
+                    {"offset":65000, "text":"谁能笑容明亮 一如往昔"},
+                    {"offset":68000, "text":"从竹马青梅之谊"},
+                    {"offset":71000, "text":"到并肩不离不弃"},
+                    {"offset":76000, "text":"再多风雨 何所畏惧"},
+                    {"offset":80000, "text":"愿此间 山有木兮卿有意"},
+                    {"offset":83000, "text":"昨夜星辰恰似你"},
+                    {"offset":89000, "text":"身无双翼 却心有一点灵犀"},
+                    {"offset":93000, "text":"愿世间 春秋与天地"},
+                    {"offset":95000, "text":"眼中唯有一个你"},
+                    {"offset":104000, "text":"苦乐悲喜 得失中尽致淋漓"},
+                    {"offset":129000, "text":"- MUSIC -"},
+                    {"offset":134000, "text":"世说长生不熄"},
+                    {"offset":143000, "text":"巍峨殿阙 孤烛流离"},
+                    {"offset":148000, "text":"向来难测人心"},
+                    {"offset":156000, "text":"花开一季 碾作尘泥"},
+                    {"offset":159000, "text":"从歧途误入迷局"},
+                    {"offset":162000, "text":"到尽处真相浮起"},
+                    {"offset":169000, "text":"才惊觉谜底竟然 是自己"},
+                    {"offset":172000, "text":"从碧落黄泉寻觅"},
+                    {"offset":175000, "text":"到末路抉择瞬息"},
+                    {"offset":180000, "text":"执手相依 最难期许"},
+                    {"offset":184000, "text":"愿此间 山有木兮卿有意"},
+                    {"offset":186000, "text":"昨夜星辰恰似你"},
+                    {"offset":193000, "text":"身无双翼 却心有一点灵犀"},
+                    {"offset":197000, "text":"愿世间 春秋与天地"},
+                    {"offset":199000, "text":"眼中唯有一个你"},
+                    {"offset":206000, "text":"苦乐悲喜 得失中尽致淋漓"},
+                    {"offset":210000, "text":"愿此间 山有木兮卿有意"},
+                    {"offset":213000, "text":"天涯海角皆随你"},
+                    {"offset":219000, "text":"纵然回忆 才明了不如归去"},
+                    {"offset":223000, "text":"愿世间 春秋与天地"},
+                    {"offset":225000, "text":"眼中唯有一个你"},
+                    {"offset":232000, "text":"苦乐悲喜 得失中尽致淋漓"},
+                    {"offset":232000, "text":"你我情意 当如此尽致淋漓"},
+                    {"offset":243000, "text":"-end-"}
+                    ];
+                    
+        var __eul = document.getElementById("lrc");
+        (function(){
+        for (var i = 0; i < __lis.length; i++) {
+            var eli = document.createElement("li");
+            eli.innerText = __lis[i].text;
+            __eul.appendChild(eli);
+        }
+        })();
+        
+        var __freq = 30; // 滚动频率（ms）
+        var __fraction = 2/5; // 高亮显示行在歌词显示区域中的固定位置百分比 
+        
+        /**
+         * 当前歌词行（lineno）滚动
+         */
+        var __go = function(_lineno){
+            var _time;
+            if (_lineno === 0) {
+                _time = __lis[_lineno].offset;
+            } else {
+                _time = __lis[_lineno].offset - __lis[_lineno-1].offset;
+            }
+            var _timer = setTimeout(__go.bind(this, _lineno+1), _time);
+            
+            // 高亮下一行歌词
+            if (_lineno > 0) {
+                __eul.children[_lineno-1].setAttribute("class", "");
+            }
+            var _ep = __eul.children[_lineno];
+            _ep.setAttribute("class", "z-crt");
+        
+            // 满足需求5，6
+            var _scrollTop;
+            if (_ep.offsetTop < __eul.clientHeight*__fraction){
+                _scrollTop = 0;
+            } else if (_ep.offsetTop > (__eul.scrollHeight - __eul.clientHeight*(1-__fraction))){
+                _scrollTop = __eul.scrollHeight - __eul.clientHeight;
+            } else {
+                _scrollTop = _ep.offsetTop - __eul.clientHeight*__fraction;
+            }
+        
+            // 如用户拖动滚动条导致当前显示行超出显示区域范围，下一行直接定位到当前显示行
+            if (__eul.scrollTop > (_scrollTop + __eul.clientHeight*__fraction)
+                || (__eul.scrollTop + __eul.clientHeight*__fraction) < _scrollTop){
+                __eul.scrollTop = _scrollTop;
+            } else { // 单行滚动
+                // 获取滚动步长
+                var _step = Math.ceil(Math.abs(__eul.scrollTop - _scrollTop)/(_time/__freq));
+                __scroll(__eul.scrollTop, _scrollTop, _step);	
+            }
+        
+        };
+        /**
+         * 歌词单行滚动实现
+         */
+        __scroll = function(_crt, _dst, _step){
+            if(Math.abs(_crt - _dst) < _step){
+                return;
+            }
+            if(_crt < _dst){
+                __eul.scrollTop += _step;
+                _crt += _step;
+            } else {
+                __eul.scrollTop -= _step;
+                _crt -= _step;
+            }
+            setTimeout(__scroll.bind(this, _crt, _dst, _step), __freq);
+        };
+        
+        __go(0);
+        
+        };
+</script>
+<script type="text/javascript">      
+    jQuery.fn.slideLeftHide = function( speed, callback )
+    {          
+        this.animate({              
+            width : "hide",              
+            paddingLeft : "hide",              
+            paddingRight : "hide",              
+            marginLeft : "hide",              
+            marginRight : "hide"          }, 
+            speed, callback );      };      
+            jQuery.fn.slideLeftShow = function( speed, callback ) {
+        this.animate({              
+            width : "show",             
+            paddingLeft : "show",         
+            paddingRight : "show",         
+            marginLeft : "show", 
+            marginRight : "show" }, 1000, callback );      };  
+</script>
+    <!-- video -->
+    <script>
+        var mvdata=["video/video01/大壮 - 我们不一样.mkv","video/video01/许巍 - 曾经的你.mkv","video/video01/陈奕迅 - 十年.mkv",
+        "video/video02/周杰伦 - 告白气球.mkv","video/video02/小潘潘、小峰峰 - 学猫叫.mkv","video/video02/杨宗纬、张碧晨 - 凉凉.mkv","video/video02/薛之谦 - 你还要我怎样.mkv",
+        "video/video03/Olly Murs - That Girl.mkv","video/video03/李荣浩 - 李白.mkv","video/video03/李袁杰 - 离人愁.mkv","video/video03/毛不易 - 消愁.mkv"]
+
+
+        var myv_p=document.querySelector('.wyv_nav').querySelectorAll('p')
+        var wyv_v=document.querySelectorAll('.wyv_v')
+        var wyv_div=document.querySelector('.wyv_div')
+        var h=0
+        for(let a=0;a<myv_p.length;a++){
+            myv_p[a].onclick=function(){
+                myv_p[h].style.color='rgb(249,134,126)'
+                this.style.color="#fff"
+                this.style.fontWeight=600
+                wyv_v[h].style.display="none"
+                wyv_v[a].style.display="block"
+                h=a
+            }
+        }
+        $('.mv_pause').hide()
+        var mv_pause=wyv_div.querySelectorAll('.mv_pause')
+        var mv_play=wyv_div.querySelectorAll('.mv_play')
+
+        var u=0
+        var mv_img=wyv_div.querySelectorAll('.mv_img')
+        var mv_div=wyv_div.querySelectorAll('.mv_div')
+        for(let v=0 ;v < mv_img.length ;v++){
+            mv_img[v].onclick=function(){
+               
+                var video=wyv_div.querySelectorAll('video')
+                
+                for(let p=0;p<video.length;p++){
+                    video[p].pause()
+                }
+                $(this).fadeOut(500)
+                var video=document.createElement('video')
+                video.src=mvdata[v]
+                video.play()
+                setTimeout(function(){
+                    mv_div[v].appendChild(video)
+                },500)
+            }
+            mv_play[v].onclick=function(){
+               
+                $('.mv_play').show()
+                $('.mv_pause').hide()
+                mv_play[v].style.display="none"
+                mv_pause[v].style.display="block"
+
+                var video=wyv_div.querySelectorAll('video')
+                
+                for(let p=0;p<video.length;p++){
+                    video[p].pause()
+                }
+                var flag=((this.parentNode.lastElementChild.nodeName).toLowerCase())==="video"
+                if(flag==false){
+                    $(this.parentNode.firstElementChild).fadeOut(500)
+                    // this.parentNode.firstElementChild.style.display="none"
+                    var video=document.createElement('video')
+                    video.src=mvdata[v]
+                    video.play()
+                    setTimeout(function(){
+                        mv_div[v].appendChild(video)
+                    },500)
+                }else if(flag==true){
+                    this.parentNode.lastElementChild.play()
+                }
+                
+            }
+            mv_pause[v].onclick=function(){
+                mv_pause[v].onclick=function(){
+                mv_pause[v].style.display="none"
+                mv_play[v].style.display="block"
+                this.parentElement.lastChild.pause()
+                }
+            }
+        }
+        // for(let i=0;i<mv_div.length;i++){
+        //     mv_div[i].onmouseenter=function(){
+        // }
+        // }
+        
+
+        // var yc=wyv_div.querySelectorAll('.yc')
+        // $('.yc').hide()
+        // setInterval(function(){
+        //     var video=wyv_div.querySelectorAll('video')
+        //     for(let r=0;r<video.length;r++){
+        //         video[r].onclick=function(){
+        //             for(let m=0;m<video.length;m++){
+        //                 video[m].pause()
+        //             }
+        //             video[r].play()
+        //         }
+        //     }
+        // },100)
+       
+        // var u=0
+        // var video=wyv_div.querySelectorAll('video')
+        // for(let v=0 ;v < video.length ;v++){
+        //     video[v].onclick=function(){
+        //         setTimeout(function(){
+        //             video[u].pause()
+        //             video[u].poster="fm/v1.png"
+        //         },2000)
+        //         // video[u].pause()
+        //         // video[u].currentTime=0
+        //         // video[u].poster="fm/v1.png"
+        //         video[v].play()
+        //         u=v
+        //     }
+        // }
+    </script>
+    <!-- first -->
+    <script>
+        var bt_img=document.querySelector('.banner').querySelectorAll("img")
+        var bt_li=document.querySelector('.banner').querySelectorAll("li")
+        var index=0
+        var timer=setInterval(function(){//自动轮播
+            bt_img[index].style.display='none'
+            bt_li[index].style.background='#fff'//将上一个的背景变成666
+            index=index+1
+            if(index>=bt_img.length){   
+                index=0
+            }
+            bt_li[index].style.background="#DF4337"//将当前的背景变成灰色f5f5f5
+            bt_img[index].style.display='block'
+        },5000)
+        for(j=0;j<bt_li.length;j++){
+            bt_li[j].a=j
+            bt_li[j].onclick=function(){
+                bt_img[index].style.display='none'
+                bt_li[index].style.background='#fff'//将上一个的背景变成666
+                this.style.background="#DF4337"//将当前的背景变成灰色f5f5f5
+                bt_img[this.a].style.display='block'
+                index=this.a
+            }
+        }   
+        
+        $('.in_ge').hide()
+        $('.running_div').click(function(){
+            // location.href="music.html"
+            $('.in_ge').fadeIn(500)
+            $('.in_di').hide()
+        })
+
+
+        $('.menu_listDiv').hide()
+        $(".menu").click(function(){
+            $('.menu_listDiv').fadeIn(300)
+            $('.kong').click(function(){
+                $('.menu_listDiv').hide()
+            })
+        })
+        var menu_listDiv=document.querySelector('.menu_listDiv')
+        var menu_list=document.querySelector('.menu_list')
+        var my=document.querySelector('.my')
+        // foot.style.height=(1/3)*window.innerHeight+"px"
+        menu_listDiv.style.height=window.innerHeight+"px"
+        console.log(my.clientWidth)
+        // my.style.height=my.clientWidth+'px'
+        menu_list.style.height=window.innerHeight+"px"
+        $('.c_music').hide()
+        $('.cel_music').hide()
+        $('.create').click(function(){
+            $('.c_music').toggle()
+        })
+        $('.cellect').click(function(){
+            $('.cel_music').toggle()
+        })
+        $('.tuichu').click(function(){
+            location.href="main.html"
+        })
+        $('.yejian').click(function(){
+            var running=document.querySelector('.running')
+            running.style.background="#000"
+            running.style.color="#f4f4f4"
+        })
+        var mymusic=document.querySelector(".mymusic").querySelector("img")
+        var wymusic=document.querySelector(".wymusic").querySelector("img")
+        var wyvodio=document.querySelector(".wyvodio").querySelector("img")
+        var lDiv=document.querySelectorAll(".lDiv")
+        var lBtn=document.querySelectorAll(".lBtn")
+        for(let i=0;i<lDiv.length;i++){
+            lDiv[i].style.display="none"
+            lDiv[0].style.display="block"
+            lBtn[i].onclick=function(){
+                for(var j=0;j<lDiv.length;j++){
+                    lDiv[j].style.display="none"
+                }
+                lDiv[i].style.display="block"
+            }
+        }
+        $('.wymusic').click(function(){
+            mymusic.src="wyimg/mymusic01.png"
+            wyvodio.src="wyimg/wyvodio01.png"
+            wymusic.src="wyimg/wymusic.png"
+        })
+        $('.mymusic').click(function(){
+            mymusic.src="wyimg/mymusic.png"
+            wymusic.src="wyimg/wymusic01.png"
+            wyvodio.src="wyimg/wyvodio01.png"
+        })
+        $('.wyvodio').click(function(){
+            wyvodio.src="wyimg/wyvodio.png"
+            wymusic.src="wyimg/wymusic01.png"
+            mymusic.src="wyimg/mymusic01.png"
+        })
+       
+    </script>
+    <!-- music -->
+    <script>
+        var mdata = [
+            {
+                gm:"山有木兮",
+                gs:"伦桑",
+                address:"music/伦桑 - 山有木兮.mp3",
+                img:"fm/c1.jpg",
+                flag:true
+            },
+            {
+                gm:"倒数",
+                gs:"邓紫棋",
+                address:"music/G.E.M.邓紫棋 - 倒数 (Live).mp3",
+                img:"wyimg/bg.jpg",
+                flag:false
+            },
+            {
+                gm:"起风了",
+                gs:"买辣椒也用券",
+                address:"music/买辣椒也用券 - 起风了.mp3",
+                img:"fm/s1.jpg",
+                flag:true
+            },
+            {
+                gm:"大鱼",
+                gs:"徐梦圆",
+                address:"music/徐梦圆 - 大鱼 (徐梦圆Remix).mp3",
+                img:"fm/s2.jpg",
+                flag:false
+            },
+            {
+                gm:"眉间雪",
+                gs:"晴愔",
+                address:"music/晴愔 - 眉间雪 (剧情版).mp3",
+                img:"fm/s3.jpg",
+                flag:false
+            },
+            {
+                gm:"夜空中最亮的星",
+                gs:"逃跑计划",
+                address:"music/逃跑计划 - 夜空中最亮的星.mp3",
+                img:"fm/s4.jpg",
+                flag:false
+            },
+            {
+                gm:"可不可以",
+                gs:"黑崎子",
+                address:"music/黑崎子 - 可不可以 (磁性男声版).mp3",
+                img:"fm/s5.jpg",
+                flag:false
+            }
+        ]
+        var audio=document.querySelector('audio')
+        var large=document.querySelector('.large')
+        large.style.height=window.innerHeight+"px"
+        var zanting=document.querySelectorAll('.zanting')
+        var bofang=document.querySelectorAll('.bofang')
+        var z=document.getElementById("z")
+        z.style.animationPlayState = "paused"
+        zanting[0].style.display="none"
+        zanting[1].style.display="none"
+        function pause(){
+            audio.pause()
+            bofang[0].style.display="block"
+            bofang[1].style.display="block"
+            zanting[0].style.display="none"
+            zanting[1].style.display="none"
+            z.style.animationPlayState = "paused"
+        }
+        function play(){
+            audio.play()
+            zanting[0].style.display="block"
+            zanting[1].style.display="block"
+            bofang[0].style.display="none"
+            bofang[1].style.display="none"
+            z.style.animationPlayState = "running"
+            m_pic.style.animation="move1 15s linear 0s infinite none"
+            fun()
+        }
+    
+        var bofangshichang=document.querySelector(".bofangshichang")
+        var all=document.querySelector(".all")
+        var pl=document.querySelector(".play")
+        var pa=document.querySelector(".pause")
+        var pro_div=document.querySelector(".progress")
+        var pro_img=document.querySelector(".pro_img")
+        var current_div=document.querySelector(".current_div")
+        var pre=document.querySelector(".m_foot").querySelector(".pre")
+        var next=document.querySelector(".m_foot").querySelector(".next")
+
+
+        $('.m_back').click(function(){
+            $('.in_ge').hide()
+            $('.in_di').fadeIn(500)
+        })
+        //进度条
+        {
+    
+        var timer=setInterval(function(){
+            
+            // console.log(audio.currentTime)
+            var left=(pro_div.clientWidth-pro_img.clientWidth)*(audio.currentTime/audio.duration)
+            pro_img.style.left=left+"px"
+            current_div.style.width=left+"px"
+            all.innerHTML=parseInt(Math.floor(audio.duration/60))+":"+parseInt((audio.duration-Math.floor(audio.duration/60)*60))
+            bofangshichang.innerHTML=parseInt(Math.floor(audio.currentTime/60))+":"+parseInt((audio.currentTime-Math.floor(audio.currentTime/60)*60))
+        },10)
+        var x,y;
+        pro_img.ontouchstart=function(e){    
+            clearInterval(timer)
+            x=e.changedTouches[0].clientX-pro_img.offsetLeft
+            document.documentElement.ontouchmove=function(e){
+                // console.log(e)
+                l = e.changedTouches[0].clientX - x
+                t = 0
+                // 如果left值小于0 就让其永远等于0
+                if (l<0){
+                    l = 0;
+                } 
+                // 如果 left+div的宽度大于 浏览器的宽度  就让left永远是  浏览器的宽度-div的宽度
+                if ((l + pro_img.clientWidth) > pro_div.clientWidth){
+                    l = pro_div.clientWidth - pro_img.clientWidth
+                }
+                pro_img.style.left = l  + 'px'
+                pro_img.style.top = t  + 'px'
+                current_div.style.width=l+"px"
+                var bofangshichang=document.querySelector(".bofangshichang")
+                audio.currentTime=((l+pro_img.clientWidth)/pro_div.clientWidth)*audio.duration
+            }
+            pro_img.ontouchend=function(){
+                document.documentElement.ontouchmove=null
+                var timer=setInterval(function(){
+                var left=(pro_div.clientWidth-pro_img.clientWidth)*(audio.currentTime/audio.duration)
+                pro_img.style.left=left+"px"
+                current_div.style.width=left+"px"
+                all.innerHTML=parseInt(Math.floor(audio.duration/60))+":"+parseInt((audio.duration-Math.floor(audio.duration/60)*60))
+                bofangshichang.innerHTML=parseInt(Math.floor(audio.currentTime/60))+":"+parseInt((audio.currentTime-Math.floor(audio.currentTime/60)*60))
+                },10)
+            }
+        }
+    }
+
+
+        //列表循环
+        $('.gd_xh .lbxh').click(function(){
+            s=0
+            music_move()
+            $('.gd_div').hide()
+        })
+
+
+
+
+
+        //上一首、下一首
+        {
+        var blur=document.querySelector(".blur")
+        var m_pic=document.querySelector(".m_pic")
+        var m_name=document.querySelector(".m_name")
+        var m_peo=document.querySelector(".m_peo")
+        var m_img=document.querySelector(".m_img")
+        var m_name01=document.querySelector(".m_name01")
+        var s=0
+        pre.ontouchstart=function(){
+            m_pic.style.animation="move2 15s linear 0s infinite none"
+            if(s==0){
+                s=mdata.length
+            }
+            s--
+            music_move()
+        }
+        next.ontouchstart=function(){
+            m_pic.style.animation="move2 15s linear 0s infinite none"
+            if(s==mdata.length-1){
+                s=-1
+            }
+            s++
+            music_move()
+        }
+        
+        var music_move=function(){
+           
+            if((bofang[0].style.display==""||bofang[0].style.display=="block")||bofang[1].style.display==""||bofang[1].style.display=="block"){
+                audio.src=mdata[s].address
+                blur.style.background="url("+mdata[s].img+")"
+                m_pic.style.background="url("+mdata[s].img+")"
+                m_img.src=mdata[s].img
+                m_name.innerHTML=mdata[s].gm
+                m_name01.innerHTML=mdata[s].gm
+                m_peo.innerHTML=mdata[s].gs
+                audio.pause()
+            }else{
+                audio.src=mdata[s].address
+                blur.style.background="url("+mdata[s].img+")"
+                m_pic.style.background="url("+mdata[s].img+")"
+                m_name.innerHTML=mdata[s].gm
+                m_name01.innerHTML=mdata[s].gm
+                m_img.src=mdata[s].img
+                m_peo.innerHTML=mdata[s].gs
+                var m2=function(){
+                        m_pic.style.animation="move2 15s linear 0s infinite none"
+                        setTimeout(function(){m_pic.style.animation="move1 15s linear 0s infinite none"},100)
+                }
+                m2()
+                audio.play()
+            }
+            }
+        }
+        // 喜欢否
+        setInterval(function(){
+            var xihuan=document.querySelector('.xihuan')
+            if(mdata[s].flag==true){
+                xihuan.src="wyimg/xihuan-h.png"
+                flag=false
+            }else{
+                xihuan.src="wyimg/xihuan.png"
+                flag=true
+            }
+            xihuan.onclick=function(){
+            if(mdata[s].flag==true){
+                xihuan.src="wyimg/xihuan.png"
+                mdata[s].flag=false
+            }else if(mdata[s].flag==false){
+                xihuan.src="wyimg/xihuan-h.png"
+                mdata[s].flag=true
+            }
+        }
+        },10)
+        
+        //单曲循环or循环列表
+        var xh=setInterval(function(){
+            if(audio.ended){
+                if(s==mdata.length-1){
+                s=-1
+            }
+                s++
+                music_move()
+            }
+        },10)
+        var danqu=document.querySelector('.danqu')
+        var xunhuan=document.querySelector('.xunhuan')
+        $('.xunhuan').hide()
+        $('.danqu').click(function(){
+            $('.danqu').hide()
+            $('.xunhuan').show()
+            clearInterval(xh)
+            audio.loop=true
+            $('.xunhuan').click(function(){
+                $('.xunhuan').hide()
+                $('.danqu').show()
+                clearInterval(xh)
+                audio.loop=false
+                setInterval(function(){
+                    if(audio.ended){
+                        if(s==mdata.length-1){
+                        s=-1
+                        }
+                            s++
+                            music_move()
+                        }
+                    },10)
+                })
+        })  
+
+    </script>
+
+    <script>
+        var gd_list=document.querySelector('.gd_list')
+        gd_list.style.height=6/15*window.innerHeight+"px"
+        var gd_div=document.querySelector('.gd_div')
+        gd_div.style.height=window.innerHeight+"px"
+        var gd_xh=document.querySelector('.gd_xh')
+        gd_xh.style.height=1/15*window.innerHeight+"px"
+        
+        var gd_kong=document.querySelector('.gd_kong')
+        gd_kong.style.height=8/15*window.innerHeight+"px"
+        $('.gd_div').hide()
+        var gd_list=document.querySelector(".gd_list")
+        $('.gd_listbtn').click(function(){
+            $('.gd_div').fadeIn(500)
+            gd_list.innerHTML=""
+            for(var n=0 ; n<mdata.length;n++){
+                var divall=document.createElement("div")
+                var div=document.createElement("div")
+                divall.classList="gmdiv"
+                div.innerHTML=mdata[n].gm
+                var span=document.createElement("span")
+                span.innerHTML="&nbsp;-&nbsp;&nbsp;&nbsp;"+mdata[n].gs
+               
+                divall.appendChild(div)
+                divall.appendChild(span)
+                gd_list.appendChild(divall)
+            }
+            var gmdiv=document.querySelectorAll(".gmdiv")
+            for(let k=0;k<gmdiv.length;k++){
+                gmdiv[k].onclick=function(){
+                    for(var b=0;b<mdata.length;b++){
+                        if(this.firstElementChild.innerHTML==mdata[b].gm){
+                            s=b
+                            music_move()
+                        }
+                    }
+                }
+            }
+        })
+        $('.gd_kong').click(function(){
+            $('.gd_div').hide()
+        })
+       
+    </script>
+
+
+
+</body>
+</html>
